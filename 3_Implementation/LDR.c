@@ -1,5 +1,6 @@
 
- # define GREEN 2
+ 
+  # define GREEN 2
   # define ORANGE 3
   # define RED 4
   # define Buzzer 5
@@ -12,13 +13,12 @@
     Serial.begin(9600);
   }
   
-  void loop() {
-    
+  void loop() 
+  {    
     for (int i = 2; i < 6; i++)
       digitalWrite(i, LOW);
   
-    status_Indicator();
-  
+    status_Indicator();  
   }
   
   void status_Indicator()
@@ -26,12 +26,12 @@
     int sensor_In = analogRead(A0);
     Serial.println(sensor_In);
     
-    if ( sensor_In >=40  )
+    if ( sensor_In >=400  )
     {
       digitalWrite(RED, HIGH);
       digitalWrite(Buzzer,HIGH);
     }
-    else if (sensor_In >=25 )
+    else if (sensor_In >=160 )
     {
       digitalWrite(ORANGE, HIGH);
     } else
