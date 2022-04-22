@@ -29,12 +29,12 @@ void setup() {
     int sensor_In = analogRead(A0);
     Serial.println(sensor_In);
     
-    if ( sensor_In >=400  )
+    if ( sensor_In >=40  )
     {
       digitalWrite(RED, HIGH);
       digitalWrite(Buzzer,HIGH);
     }
-    else if (sensor_In >=160 )
+    else if (sensor_In >=25 )
     {
       digitalWrite(ORANGE, HIGH);
     } else
