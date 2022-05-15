@@ -8,3 +8,5 @@
 ![Code_quality_Score](https://api.codiga.io/project/32989/score/svg)
 ![Code_Grade](https://api.codiga.io/project/32989/status/svg)
 
+# Build on linux
+[![Build-Linux](https://github.com/kavyagolagana/M2_LDR_Sensor/actions/workflows/Build%20on%20linux.yml/badge.svg)](https://github.com/kavyagolagana/M2_LDR_Sensor/actions/workflows/Build%20on%20linux.yml)
